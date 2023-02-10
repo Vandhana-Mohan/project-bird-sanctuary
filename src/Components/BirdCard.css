@@ -1,14 +1,15 @@
-.birdcard__image{
-    width:50%;
-    height: 50%;
-}
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
-}
+  .birdcard__image{
+      width:50%;
+      height: 50%;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+  }
 
   .birdcard {
     width: 30%;
@@ -18,7 +19,7 @@
     box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
     margin: 10px;
   }
-  
+
   .birdcard__adopt{
     margin-top: 2%;
     width:50%;

@@ -1,14 +1,15 @@
-footer {
-    background-color: #111;
+.style__footer {
+    background: linear-gradient(to right, #7e7c7c, #383737, #151414, #383737, #6e6c6c);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
     text-align: center;
     padding: 2% 1%;
     margin-top: 2%;
+    box-shadow: 0px 0px 10px 0px #333;
 }
 
-.social_links {
+.style__footer__social__links {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -17,18 +18,19 @@ footer {
     margin-top: 1%;
 }
 
-.social_links li {
+.style__footer__social__links li {
     display: inline-block;
     font-weight: 400;
+    padding: 0 20px;
 }
 
-.social_links a {
+.style__footer__social__links a {
     display: inline-block;
-    padding: 0 12px;
     color: #fff;
     cursor:pointer;
     text-decoration: none;
     font-size: 30px;
+    padding: 0 12px;
 }
 
 .fab.fa-facebook-square { 
@@ -57,7 +59,7 @@ footer {
     color: #6e767d;
 }
 
-.social_links li a:hover {
+.style__footer__social__links li a:hover {
     transform: scale(1.2);
     transform: rotate(180deg);
     -webkit-transform: rotate(360deg);
@@ -68,12 +70,12 @@ footer {
 }
 
 
-footer p a{
+.style__copyright a{
     text-decoration: none;
 }
 
-footer p {
-    font-family: Arial, sans-serif;
+.style__copyright {
+    font-family: 'Open Sans', sans-serif;
     padding: 0 12px;
     font-size: 14px;
     color: #fff;

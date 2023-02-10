@@ -1,5 +1,8 @@
 .Cart{
     display:flex;
     flex-direction: column;
-    
+    border:2px solid red;
+    margin:0;
+    width:25%;
+    text-align: center;
 }

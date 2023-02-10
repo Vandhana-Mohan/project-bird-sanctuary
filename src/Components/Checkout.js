@@ -5,7 +5,7 @@ const Checkout = () => {
         alert("You have adopted birds. Thank you!")
     }
     return(
-        <section className="Checkout">
+        <aside className="Checkout">
             <h1 className="Checkout__title">Checkout</h1>
             <form onSubmit={handleSubmit} className="Checkout__form">
                 <label htmlFor="first-name">First Name
@@ -18,7 +18,7 @@ const Checkout = () => {
                     placeholder="Your First name..."
                 />
                 </label>
-                <br/><br/>
+                <br/>
                 <label htmlFor="last-name">Last Name
                 <br/>
                 <input
@@ -28,7 +28,7 @@ const Checkout = () => {
                     placeholder="Your Last name..."
                 />
                 </label>
-                <br/> <br/>
+                <br/>
                 <label htmlFor="email">Email
                 <br/>
                 <input
@@ -38,7 +38,7 @@ const Checkout = () => {
                     placeholder="Your Email..."
                 />
                 </label>
-                <br/><br/>
+                <br/>
                 <label htmlFor="zip-code">Zip Code
                 <br/>
                 <input
@@ -47,11 +47,11 @@ const Checkout = () => {
                     name="zip-code"
                 />
                 </label>
-                <br/><br/>
+                <br/>
                 <button type="submit" className="birds">Submit</button>
                 <button type="reset">Reset</button>
             </form>
-        </section>
+        </aside>
     )
 }
 

@@ -3,19 +3,16 @@
     height: 50%;
 }
 
-.card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
   .birdcard {
     width: 30%;
     margin-bottom: 2%;
     text-align: center;
     background-color: rgb(228,245,242);
     box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .birdcard__adopt{

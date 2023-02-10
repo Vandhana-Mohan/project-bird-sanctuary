@@ -12,13 +12,14 @@ function App () {
   return (
     <div>
       <Header />
+
       <div className="card">
         {birds.map((bird) => (
           <BirdCard bird={bird} key={bird.id} />
         ))}
-      </div>
       <Cart />
       <Checkout />
+      </div>
       <Footer />
     </div>
   );

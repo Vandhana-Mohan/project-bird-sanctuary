@@ -2,7 +2,7 @@ import "./Cart.css"
 
 const Cart = () => {
     return(
-        <div className="Cart">
+        <aside className="Cart">
             <h1>Cart</h1>
             <h4>Discount: {20} %</h4>
             <h4>Total: $ {20}</h4>
@@ -14,7 +14,7 @@ const Cart = () => {
             <ul>
                 <li></li>
             </ul>
-        </div>
+        </aside>
     )
 }
 export default Cart

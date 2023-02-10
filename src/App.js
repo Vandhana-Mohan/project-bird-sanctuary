@@ -5,7 +5,7 @@ function App () {
   return (
     <div>
       <h1>Bird Sanctuary</h1>
-      <BirdCard />
+      <BirdCard Price = "$50"/>
     </div>
   );
 };

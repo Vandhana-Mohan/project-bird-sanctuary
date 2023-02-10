@@ -1,14 +1,16 @@
-const BirdCard = (props) => {
+const BirdCard = ({ bird }) => {
+    const { img, name, amount } = bird
     return (
-        <div>
-            <h2>Bird</h2>
-            <h4>Price : {props.Price} </h4>
+        <main>
+            <h2>{name}</h2>
+            <h4>Price : {amount} </h4>
             <span>
-                <img src="" alt="" />
+                <img src={img} alt="bird" />
             </span>
             <button>Adopt</button>
-        </div>
+        </main>
     )
 }
-
 export default BirdCard;
+  
+  

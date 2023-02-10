@@ -1,8 +1,12 @@
 import "./Checkout.css"
 
 const Checkout = () => {
-    function handleSubmit(){
-        alert("You have adopted birds. Thank you!")
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const result = window.confirm("You have adopted birds. Thank you!\n\nClick 'Close' to close this alert.");
+        if (result) {
+            event.target.reset();
+        }
     }
     return(
         <aside className="Checkout">

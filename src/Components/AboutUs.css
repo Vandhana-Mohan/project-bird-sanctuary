@@ -1,0 +1,34 @@
+.about__us {
+    padding: 60px;
+    background-color: #fafafa;
+    text-align: center;
+ }
+    
+.about__us__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+ }
+    
+.about__us__text {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: justify;
+}
+    
+ .about__us__h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+ }
+    
+.about__us__h2:hover {
+    color: #00b0ff;
+    cursor: pointer;
+}
+        

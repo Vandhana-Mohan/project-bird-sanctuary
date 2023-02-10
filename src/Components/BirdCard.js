@@ -3,14 +3,14 @@ import "./BirdCard.css"
 const BirdCard = ({ bird }) => {
     const { img, name, amount } = bird
     return (
-        <main>
+        <main className="birdcard">
             <h4>{name}</h4>
             <p>Price: ${amount} </p>
             <span>
-                <img src={img} alt="bird" />
+                <img className="birdcard__image" src={img} alt="bird" />
             </span>
             <br></br>
-            <button>ADOPT</button>
+            <button className="birdcard__adopt">ADOPT</button>
         </main>
     )
 }

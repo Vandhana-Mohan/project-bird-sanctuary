@@ -1,4 +1,4 @@
-img{
+.birdcard__image{
     width:50%;
     height: 50%;
 }
@@ -10,29 +10,29 @@ img{
     justify-content: space-between;
   }
   
-  main {
+  .birdcard {
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     text-align: center;
     background-color: rgb(228,245,242);
     box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
   }
   
-  button{
+  .birdcard__adopt{
     margin-top: 2%;
     width:50%;
     font-size: larger;
     letter-spacing: 1%;
   }
 
-  button:hover{
+  .birdcard__adopt:hover{
     color: rgb(3, 56, 35);
     cursor: pointer;
-    background-color: rgb(135, 247, 161);
+    background-color: rgb(171, 242, 185);
     box-shadow: 2px 2px 8px 4px grey;
     transition: box-shadow 0.5s ease-in;
   }
 
-  h4{
+  .birdcard h4{
     margin-top: 3%;
   }

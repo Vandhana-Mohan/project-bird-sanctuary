@@ -12,8 +12,7 @@ function App () {
   return (
     <div>
       <Header />
-
-      <div className="card">
+      <div className="card app-content-container">
         {birds.map((bird) => (
           <BirdCard bird={bird} key={bird.id} />
         ))}

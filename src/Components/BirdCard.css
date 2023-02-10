@@ -2,6 +2,13 @@
     width:50%;
     height: 50%;
 }
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
 
   .birdcard {
     width: 30%;
@@ -9,10 +16,7 @@
     text-align: center;
     background-color: rgb(228,245,242);
     box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 10px;
   }
   
   .birdcard__adopt{

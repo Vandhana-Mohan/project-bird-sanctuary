@@ -1,0 +1,27 @@
+img{
+    width:50%;
+    height: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  main {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(228,245,242);
+  }
+  
+  button{
+    margin-top: 2%;
+    width:50%;
+  }
+
+  h4{
+    margin-top: 2%;
+  }

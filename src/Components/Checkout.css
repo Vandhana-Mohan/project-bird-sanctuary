@@ -1,10 +1,9 @@
 .Checkout{
-    display: flex;
-    flex-direction: column;
-    border:2px solid blue;
-    margin: 20px;
-    width: 25%;
+    margin: 10px;
+    width: 100%;
     text-align: center;
+    box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
+    border:2px solid rgb(216,215,216)
 }
 
 .Checkout label{
@@ -13,9 +12,10 @@
 
 .Checkout button{
     font-size: large;
-    width: 40%;
+    width: 45%;
     margin-left: 5%;
     margin-bottom: 10%;
+    text-align: center;
 }
 
 .Checkout input{

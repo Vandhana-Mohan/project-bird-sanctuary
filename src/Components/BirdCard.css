@@ -3,28 +3,22 @@
       height: 50%;
   }
 
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 70%;
-  }
-
   .birdcard {
-    width: 30%;
-    margin-bottom: 2%;
+    width: 29%;
     text-align: center;
     background-color: rgb(228,245,242);
     box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
-    margin: 10px;
+    margin-bottom: 2%;
+    margin-left:2%;
+    margin-top: 2%;
   }
 
   .birdcard__adopt{
-    margin-top: 2%;
+    margin-top: 5%;
     width:50%;
     font-size: larger;
     letter-spacing: 1%;
+    margin-bottom: 20%;
   }
 
   .birdcard__adopt:hover{

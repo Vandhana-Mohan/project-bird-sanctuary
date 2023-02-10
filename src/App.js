@@ -8,20 +8,24 @@ import Checkout from "./Components/Checkout";
 import Footer from "./Components/Footer"
 import "./App.css"
 
-function App () {
+function App() {
   return (
     <div>
       <Header />
-      <div className="card app-content-container">
-        {birds.map((bird) => (
-          <BirdCard bird={bird} key={bird.id} />
-        ))}
-      <Cart />
-      <Checkout />
-      </div>
+      <div className="card">
+      <div className="cart-container">
+          <Cart />
+          <Checkout />
+        </div>
+        <div className="bird-cards">
+          {birds.map(bird => (
+            <BirdCard bird={bird} key={bird.id} />
+          ))}
+        </div>
+        </div>
       <Footer />
     </div>
   );
-};
+}
 
 export default App;

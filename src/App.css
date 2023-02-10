@@ -1,0 +1,19 @@
+
+  .card {
+    display: flex;
+    width: 100%;
+  }
+  
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    justify-content: flex-start;
+  }
+  
+  .bird-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 78%;
+  }

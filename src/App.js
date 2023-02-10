@@ -3,6 +3,8 @@ import birds from "./data/birds"
 
 import Header from "./Components/Header";
 import BirdCard from "./Components/BirdCard";
+import Cart from "./Components/Cart"
+import Checkout from "./Components/Checkout";
 import Footer from "./Components/Footer"
 import "./App.css"
 
@@ -15,6 +17,8 @@ function App () {
           <BirdCard bird={bird} key={bird.id} />
         ))}
       </div>
+      <Cart />
+      <Checkout />
       <Footer />
     </div>
   );

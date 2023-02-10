@@ -3,18 +3,18 @@ import "./Header.css"
 const Header = () => {
     return(
         <header className="style__header">
-            <nav>
+            <nav className="style__header__nav">
                 <h1> Bird Sanctuary Project</h1>
                 <cite> By Vandhana Mohan</cite>
-                <ul>
-                    <li>
-                        <button>Home</button>
+                <ul className="style__header__ul">
+                    <li className="style__header__li">
+                        <button className="style__header__buttons">Home</button>
                     </li>
-                    <li>
-                        <button>About Us</button>
+                    <li className="style__header__li">
+                        <button className="style__header__buttons">About Us</button>
                     </li>
-                    <li>
-                        <button>Contact Us</button>
+                    <li className="style__header__li">
+                        <button className="style__header__buttons">Contact Us</button>
                     </li>
                 </ul>
             </nav>

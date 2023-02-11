@@ -1,9 +1,9 @@
-  .birdcard__image{
+  .birds__image{
       width:50%;
       height: 50%;
   }
 
-  .birdcard {
+  .birds {
     width: 29%;
     text-align: center;
     background-color: rgb(228,245,242);
@@ -13,7 +13,7 @@
     margin-top: 1%;
   }
 
-  .birdcard__adopt{
+  .birds__adopt{
     margin-top: 5%;
     width:50%;
     font-size: larger;
@@ -21,7 +21,7 @@
     margin-bottom: 20%;
   }
 
-  .birdcard__adopt:hover{
+  .birds__adopt:hover{
     color: rgb(3, 56, 35);
     cursor: pointer;
     background-color: rgb(171, 242, 185);
@@ -29,6 +29,6 @@
     transition: box-shadow 0.5s ease-in;
   }
 
-  .birdcard h4{
+  .birds h4{
     margin-top: 3%;
   }

@@ -6,14 +6,14 @@ const BirdCard = ({ bird }) => {
     }
     const { img, name, amount } = bird
     return (
-        <main className="birdcard">
+        <main className="birds">
             <h4>{name}</h4>
             <p>Price: ${amount} </p>
             <span>
-                <img className="birdcard__image" src={img} alt="bird" />
+                <img className="birds__image" src={img} alt="bird" />
             </span>
             <br></br>
-            <button className="birdcard__adopt" onClick={() => XYZ()}>Adopt</button>
+            <button className="birds__adopt" onClick={() => XYZ()}>Adopt</button>
         </main>
     )
 }

@@ -2,7 +2,7 @@ import "./Checkout.css"
 const Checkout = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        const result = window.alert("You have adopted birds. Thank you! \n\nClick 'Close' to close this alert.");
+        const result = window.alert("You have adopted birds. Thank you!");
         if (result) {
             event.target.reset(); 
         }

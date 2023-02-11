@@ -8,10 +8,10 @@ const Checkout = () => {
             event.target.reset();
         }
     }
-    return(
+    return (
         <aside className="Checkout">
-            <h1 className="Checkout__title">Checkout</h1>
-            <form onSubmit={handleSubmit} className="Checkout__form">
+            <h4 className="Checkout__title">Checkout</h4>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="first-name">First Name
                 <br/>
                 <input 
@@ -52,11 +52,10 @@ const Checkout = () => {
                 />
                 </label>
                 <br/>
-                <button type="submit" className="birds">Submit</button>
-                <button type="reset">Reset</button>
-            </form>
-        </aside>
-    )
+                <input type="submit" className = "birds" value="Submit"/>
+                </form>
+            </aside>
+  );
 }
-
 export default Checkout
+

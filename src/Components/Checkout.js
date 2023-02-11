@@ -1,11 +1,10 @@
 import "./Checkout.css"
-
 const Checkout = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        const result = window.confirm("You have adopted birds. Thank you!\n\nClick 'Close' to close this alert.");
+        const result = window.alert("You have adopted birds. Thank you! \n\nClick 'Close' to close this alert.");
         if (result) {
-            event.target.reset();
+            event.target.reset(); 
         }
     }
     return (
@@ -58,4 +57,3 @@ const Checkout = () => {
   );
 }
 export default Checkout
-

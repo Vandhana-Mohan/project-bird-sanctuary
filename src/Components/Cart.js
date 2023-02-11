@@ -7,8 +7,9 @@ const Cart = () => {
             <h3>Discount: {10} %</h3>
             <h4>Total: $ {20}</h4>
             <ol>
-                <li> </li>
-                <li> </li>
+                {adoptedBirds.map((bird, index) => (
+                    <li key={index}>{bird}</li>
+                ))}
             </ol>
             <p> Your donations have qualified you for the following items</p>
             <ul>

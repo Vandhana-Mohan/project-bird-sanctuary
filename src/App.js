@@ -18,7 +18,7 @@ function App() {
     setAdoptedBirds([...adoptedBirds, bird]);
     setTotal(total + bird.amount);
   };
-
+  // bird-portfolio - checkout - without this line cypress will fail
   useEffect(() => {
     if (adoptedBirds.length >= 3) {
       setDiscount(true);

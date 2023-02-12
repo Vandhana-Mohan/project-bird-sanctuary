@@ -45,6 +45,7 @@ const Checkout = ({ handleReset }) => {
           />
         </label>
         <br />
+        {/* bird-portfolio - checkout - without this line cypress will fail */}
         <label htmlFor="zip-code">
           Zip Code
           <br />

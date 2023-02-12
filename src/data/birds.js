@@ -56,5 +56,5 @@ const birdData = [
     id: 2424,
   },
 ];
-
+// bird-portfolio - checkout - without this line cypress will fail
 export default birdData;

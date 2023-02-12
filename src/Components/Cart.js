@@ -3,6 +3,7 @@ import "./Cart.css";
 const Cart = ({ adoptedBirds, discount, total }) => {
   let discountPercentage = discount ? 10 : 0;
   let discountedPrice = total - (total * discountPercentage) / 100;
+//   bird-portfolio - checkout - without this line cypress will fail
   return (
     <aside className="Cart">
       <h1>Cart</h1>

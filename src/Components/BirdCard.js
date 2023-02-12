@@ -10,7 +10,7 @@ const BirdCard = ({ bird, onAdopt }) => {
                 <img className="birds__image" src={img} alt={name} />
             </span>
             <br></br>
-            <button className="birds__adopt" onClick={() => onAdopt(name)}>Adopt</button>
+            <button className="birds__adopt" onClick={() => onAdopt(bird)}>Adopt</button>
         </main>
     )
 }

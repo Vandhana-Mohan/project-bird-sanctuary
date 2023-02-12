@@ -1,14 +1,11 @@
 import "./Checkout.css";
 
 const Checkout = ({ handleReset }) => {
-  console.log("1:", { handleReset });
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("You have adopted birds. Thank you!");
     event.target.reset();
-    console.log("2:", handleReset);
     handleReset();
-    console.log("3:", handleReset);
   };
   return (
     <aside className="Checkout">

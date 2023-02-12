@@ -17,14 +17,21 @@ function App() {
   const handleAdopt = (bird) => {
     setAdoptedBirds([...adoptedBirds, bird]);
     setTotal(total + bird.amount);
-  }
+  };
 
   useEffect(() => {
     if (adoptedBirds.length >= 3) {
       setDiscount(true);
+    } else {
+      setDiscount(false);
     }
-  }, [adoptedBirds]);
-};
+  }, [adoptedBirds.length]);
+
+  const handleReset = () => {
+    setAdoptedBirds([]);
+    setTotal(0);
+    setDiscount(0);
+  };
 
   return (
     <div>
@@ -32,7 +39,7 @@ function App() {
       <div className="card">
         <div className="cart-container">
           <Cart adoptedBirds={adoptedBirds} discount={discount} total={total} />
-          <Checkout />
+          <Checkout handleReset={handleReset} />
         </div>
         <div className="bird-cards">
           {birds.map((bird) => (

@@ -10,8 +10,18 @@ import "./App.css"
 
 function App() {
   const [adoptedBirds, setAdoptedBirds] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [discount, setDiscount] = useState(0);
+
   const handleAdopt = (birdName) => {
     setAdoptedBirds([...adoptedBirds, birdName]);
+    setTotal(total + birdName.amount);
+
+    if (adoptedBirds.length >= 3) {
+      setDiscount(10);
+    } else {
+      setDiscount(0);
+    }
   };
   
   return (
@@ -19,7 +29,7 @@ function App() {
       <Header />
       <div className="card">
         <div className="cart-container">
-            <Cart adoptedBirds={adoptedBirds} />
+            <Cart adoptedBirds={adoptedBirds} discount = {discount}/>
             <Checkout />
         </div>
         <div className="bird-cards">

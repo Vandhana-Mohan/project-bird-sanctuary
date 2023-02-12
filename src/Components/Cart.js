@@ -1,10 +1,10 @@
 import "./Cart.css"
 
-const Cart = ({ adoptedBirds }) => {
+const Cart = ({ adoptedBirds,discount }) => {
     return(
         <aside className="Cart">
             <h3>Cart</h3>
-            <h3>Discount: {20} %</h3>
+            <h3>Discount: {discount} %</h3>
             <h4>Total: $ {10}</h4>
             <ol>
                 {adoptedBirds.map((bird, index) => (

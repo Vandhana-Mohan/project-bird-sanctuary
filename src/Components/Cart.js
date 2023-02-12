@@ -20,7 +20,7 @@ const Cart = ({ adoptedBirds, discount, total }) => {
       </ol>
       <p> Your donations have qualified you for the following items</p>
       <ul>
-        
+        <li>Stickers</li>
       </ul>
     </aside>
   );

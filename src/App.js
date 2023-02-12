@@ -19,7 +19,7 @@ function App() {
       <Header />
       <div className="card">
         <div className="cart-container">
-            <Cart />
+            <Cart adoptedBirds={adoptedBirds} />
             <Checkout />
         </div>
         <div className="bird-cards">

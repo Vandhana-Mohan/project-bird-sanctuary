@@ -1,7 +1,8 @@
 .Cart{
     width:100%;
     text-align: center;
-    margin: 5%;
+    margin-bottom: 20%;
+    margin-top:3%;
     box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
     border:2px solid rgb(216,215,216)
 }

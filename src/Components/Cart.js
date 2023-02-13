@@ -22,7 +22,7 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
     }
   };
   const bonuses = getBonuses(total);
-
+  
   return (
     <aside className="Cart">
       <h1>Cart</h1>
@@ -41,12 +41,16 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
           </li>
         ))}
       </ol>
-      <p> Your donations have qualified you for the following items</p>
-      <ul>
-        {bonuses.map((bonus, index) => (
-          <li key={generateUniqueID()}>{bonus}</li>
-        ))}
-      </ul>
+      {bonuses.length >= 1 ? (
+        <div>
+            <p> Your donations have qualified you for the following items</p>
+            <ul>
+                {bonuses.map((bonus, index) => (
+                <li key={generateUniqueID()}>{bonus}</li>
+                ))}
+            </ul>
+        </div>
+      ):null}
     </aside>
   );
 };

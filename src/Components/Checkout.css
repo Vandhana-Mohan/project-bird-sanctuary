@@ -1,5 +1,4 @@
 .Checkout{
-    margin: 5%;
     width: 100%;
     text-align: center;
     box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
@@ -19,6 +18,6 @@
 }
 
 .Checkout input{
-    width:70%;
+    width:80%;
     margin-bottom: 1%;
 }

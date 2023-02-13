@@ -19,7 +19,7 @@ function App() {
     setAdoptedBirds([...adoptedBirds, { ...bird, id: generateUniqueID() }]);
     setTotal(total + bird.amount);
   };
-  
+
   // bird-portfolio - checkout - without this comment cypress will fail
   const handleDelete = (id) => {
     const bird = adoptedBirds.find((bird) => bird.id === id);

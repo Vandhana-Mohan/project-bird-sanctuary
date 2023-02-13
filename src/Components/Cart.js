@@ -2,11 +2,11 @@ import "./Cart.css";
 import bonusItems from "../data/bonusItems";
 import { v1 as generateUniqueID } from "uuid";
 
-const Cart = ({ adoptedBirds, discount, total }) => {
+const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
   const bonus = [...bonusItems];
   let discountPercentage = discount ? 10 : 0;
   let discountedPrice = total - (total * discountPercentage) / 100;
-  //   bird-portfolio - checkout - without this line cypress will fail
+  //   bird-portfolio - checkout - without this comment cypress will fail
   const getBonuses = (total) => {
     switch (true) {
       case total >= 100 && total < 300:
@@ -22,9 +22,7 @@ const Cart = ({ adoptedBirds, discount, total }) => {
     }
   };
   const bonuses = getBonuses(total);
-  const handleDelete = (index) => {
-    console.log("hi");
-  };
+
   return (
     <aside className="Cart">
       <h1>Cart</h1>
@@ -34,9 +32,9 @@ const Cart = ({ adoptedBirds, discount, total }) => {
       </div>
       <ol>
         {adoptedBirds.map((bird, index) => (
-          <li key={index}>
+          <li key={generateUniqueID()}>
             {bird.name} ${bird.amount}
-            <button onClick={() => handleDelete(index)}>
+            <button onClick={() => onDelete(bird.id)}>
               <span>Delete</span>
               <span className="x">X</span>
             </button>
@@ -46,7 +44,7 @@ const Cart = ({ adoptedBirds, discount, total }) => {
       <p> Your donations have qualified you for the following items</p>
       <ul>
         {bonuses.map((bonus, index) => (
-          <li key={index}>{bonus}</li>
+          <li key={generateUniqueID()}>{bonus}</li>
         ))}
       </ul>
     </aside>

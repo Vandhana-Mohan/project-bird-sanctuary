@@ -7,6 +7,7 @@ import BirdCard from "./Components/BirdCard";
 import Cart from "./Components/Cart";
 import Checkout from "./Components/Checkout";
 import Footer from "./Components/Footer";
+import { v1 as generateUniqueID } from "uuid";
 import "./App.css";
 
 function App() {
@@ -15,10 +16,18 @@ function App() {
   const [discount, setDiscount] = useState(0);
 
   const handleAdopt = (bird) => {
-    setAdoptedBirds([...adoptedBirds, bird]);
+    setAdoptedBirds([...adoptedBirds, { ...bird, id: generateUniqueID() }]);
     setTotal(total + bird.amount);
   };
-  // bird-portfolio - checkout - without this line cypress will fail
+  
+  // bird-portfolio - checkout - without this comment cypress will fail
+  const handleDelete = (id) => {
+    const bird = adoptedBirds.find((bird) => bird.id === id);
+    const newAdoptedBirds = adoptedBirds.filter((bird) => bird.id !== id);
+    setAdoptedBirds(newAdoptedBirds);
+    setTotal(total - bird.amount);
+  };
+
   useEffect(() => {
     if (adoptedBirds.length >= 3) {
       setDiscount(true);
@@ -38,7 +47,12 @@ function App() {
       <Header />
       <div className="card">
         <div className="cart-container">
-          <Cart adoptedBirds={adoptedBirds} discount={discount} total={total} />
+        <Cart
+            adoptedBirds={adoptedBirds}
+            discount={discount}
+            total={total}
+            onDelete={handleDelete}
+          />
           <Checkout handleReset={handleReset} />
         </div>
         <div className="bird-cards">

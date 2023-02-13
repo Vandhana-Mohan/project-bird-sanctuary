@@ -25,24 +25,25 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
   
   return (
     <aside className="Cart">
-      <h1>Cart</h1>
+      <h1 className="Cart__heading">Cart</h1>
       <div>
-        <h3>Discount: {discountPercentage}%</h3>
-        <h4>Total: ${discountedPrice} </h4>
+        <h3 className="Cart__discount">Discount: {discountPercentage}%</h3>
+        <h4 className="Cart__total">Total: ${discountedPrice} </h4>
       </div>
-      <ol>
-        {adoptedBirds.map((bird, index) => (
-          <li key={generateUniqueID()}>
-            {bird.name} ${bird.amount}
-            <button onClick={() => onDelete(bird.id)}>
-              <span>Delete</span>
-              <span className="x">X</span>
-            </button>
-          </li>
-        ))}
-      </ol>
+      <div className = "style__list__birds">
+        <ol>
+          {adoptedBirds.map((bird, index) => (
+            <li key={generateUniqueID()}>
+              {bird.name} -- ${bird.amount}
+              <button className = "delete__list"onClick={() => onDelete(bird.id)}>
+                <span> <i className='fas fa-backspace'></i> </span>
+              </button>
+            </li>
+          ))}
+        </ol>
+      </div>
       {bonuses.length >= 1 ? (
-        <div>
+        <div className = "style__list__bonus">
             <p> Your donations have qualified you for the following items</p>
             <ul>
                 {bonuses.map((bonus, index) => (

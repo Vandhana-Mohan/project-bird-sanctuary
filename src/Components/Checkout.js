@@ -9,7 +9,7 @@ const Checkout = ({ handleReset }) => {
   };
   return (
     <aside className="Checkout">
-      <h4 className="Checkout__title">Checkout</h4>
+      <h4 className="Checkout__heading">Checkout</h4>
       <form onSubmit={handleSubmit}>
         <label htmlFor="first-name">
           First Name

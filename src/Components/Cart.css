@@ -1,8 +1,45 @@
-.Cart{
-    width:100%;
-    text-align: center;
-    margin-bottom: 20%;
-    margin-top:3%;
-    box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
-    border:2px solid rgb(216,215,216)
+.Cart {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20%;
+  margin-top: 3%;
+  box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
+  border: 2px solid rgb(216, 215, 216);
+  font-family: "Roboto Mono";
+}
+
+.Cart__heading {
+  margin-top: 5%;
+  font-size: 40px;
+  color: rgb(46, 96, 54);
+}
+
+.Cart__discount, .Cart__total{
+  font-size: 30px;
+}
+
+/* .style__list__birds, .style__list__bonus{
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  margin-left:15px;
+} */
+
+.cart li, p {
+  margin-bottom: 10px;
+  list-style-position: outside;
+}
+
+.delete__list {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.fas.fa-backspace {
+  font-size: 30px;
 }

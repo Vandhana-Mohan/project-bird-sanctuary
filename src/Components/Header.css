@@ -1,18 +1,19 @@
 .style__header{
     box-shadow: 0px 0px 10px 0px #333;
     margin-bottom: 2%;
+    font-family: 'Roboto Mono';
 }
 
 .style__header__title {
     margin-bottom: 10px;
-    font-size: 42px;
+    font-size: 45px;
     font-weight: bold;
     color: rgb(60, 60, 60);
-    font-family: Arial, sans-serif;
+    font-family: 'Comfortaa';
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    margin-left:36%;
+    margin-left:33%;
     font-style: italic;
     color: darkblue;
 }

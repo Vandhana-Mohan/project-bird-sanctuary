@@ -21,3 +21,10 @@
     width:80%;
     margin-bottom: 1%;
 }
+
+.Checkout__heading{
+    margin-top:5%;
+    font-size: 46px;
+    font-family: 'Roboto Mono';
+    color: rgb(46,96,54);
+}

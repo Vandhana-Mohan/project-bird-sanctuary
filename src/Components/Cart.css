@@ -1,11 +1,15 @@
 .Cart {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20%;
+  /* width: 100%;
+  text-align: center; */
+ 
   margin-top: 3%;
   box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
   border: 2px solid rgb(216, 215, 216);
   font-family: "Roboto Mono";
+  align-items: center;
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Cart__heading {
@@ -17,6 +21,31 @@
 .Cart__discount,
 .Cart__total {
   font-size: 30px;
+}
+
+.style__list__birds ol{
+  list-style: none;
+  padding: 0;
+}
+
+.style__list__birds li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.list-number {
+  width: 20%;
+}
+
+.list-name {
+  width: 40%;
+}
+
+.list-price {
+  width: 20%;
 }
 
 .style__list__birds,
@@ -42,7 +71,7 @@
 .delete__list {
   width: 30px;
   font-size: 30px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 2%;
@@ -61,41 +90,4 @@
 
 .fas.fa-backspace {
   font-size: 30px;
-}
-
-.style__list__birds {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  text-align: center;
-}
-
-.style__list__birds th {
-  font-weight: bold;
-  padding: 8px;
-  font-size: 16px;
-  color: rgb(46, 96, 54);
-  text-align: center;
-  background-color: lightgray;
-  border: 1px solid black;
-}
-
-.style__list__birds th,
-.style__list__birds td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.style__list__birds td {
-  vertical-align: top;
-  text-align: left;
-  font-size: 15px;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
 }

@@ -30,33 +30,20 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
         <h3 className="Cart__discount">Discount: {discountPercentage}%</h3>
         <h4 className="Cart__total">Total: ${discountedPrice} </h4>
       </div>
-      <table className = "style__list__birds">
-        <thead>
-          <tr>
-            <th>Number</th>
-            <th>Name of Bird</th>
-            <th>Price</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
+      <div className = "style__list__birds">
         <ol>
           {adoptedBirds.map((bird, index) => (
             <li key={generateUniqueID()}>
-            <tr>
-              <td>{bird.name}</td>
-              <td>${bird.amount}</td>
-              <td>
+              <span className="list-number">{index + 1}</span>
+              <span className="list-name">{bird.name}</span>
+              <span className="list-price">${bird.amount}</span>
               <button className = "delete__list"onClick={() => onDelete(bird.id)}>
                 <span> <i className='fas fa-backspace'></i> </span>
               </button>
-              </td>
-            </tr>
             </li>
           ))}
         </ol>
-        </tbody>
-      </table>
+      </div>
       {bonuses.length >= 1 ? (
         <div className = "style__list__bonus">
             <p> Your donations have qualified you for the following items:</p>

@@ -34,7 +34,7 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
         <ol>
           {adoptedBirds.map((bird, index) => (
             <li key={generateUniqueID()}>
-              <span className="list-number">{index + 1}</span>
+              <span className="list-number">{index + 1}.</span>
               <span className="list-name">{bird.name}</span>
               <span className="list-price">${bird.amount}</span>
               <button className = "delete__list"onClick={() => onDelete(bird.id)}>

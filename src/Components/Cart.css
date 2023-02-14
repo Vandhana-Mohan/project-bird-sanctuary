@@ -1,15 +1,15 @@
 .Cart {
-  /* width: 100%;
-  text-align: center; */
- 
+  width: 100%;
+  text-align: center;
   margin-top: 3%;
-  box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
+  box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
   border: 2px solid rgb(216, 215, 216);
   font-family: "Roboto Mono";
   align-items: center;
   margin-bottom: 20%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(228, 245, 242);
 }
 
 .Cart__heading {
@@ -28,40 +28,39 @@
   padding: 0;
 }
 
-.style__list__birds li {
+.style__list__birds ol li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .list-number {
-  width: 20%;
+  width: 10%;
+  margin-right: 10px;
 }
 
 .list-name {
-  width: 40%;
+  width: 50%;
 }
 
 .list-price {
   width: 20%;
 }
 
-.style__list__birds,
-.style__list__bonus {
-  text-align: left;
-}
-
-.style__list__bonus li,
+.style__list__bonus ul li,
 .style__list__bonus p {
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 20px;
+  font-size: 15.5px;
   margin-right: 5px;
+  text-align: left;
+  margin-top:20px;
 }
 
-.style__list__bonus li {
+.style__list__bonus ul li {
   margin-left: 70px;
+  list-style-type: square;
 }
 
 .style__list__bonus p {
@@ -70,13 +69,14 @@
 
 .delete__list {
   width: 30px;
-  font-size: 30px;
+  font-size: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 2%;
   background-color: rgb(222, 218, 218);
   border:2px solid black;
+  margin-right: 15px;
 }
 
 .delete__list:hover{

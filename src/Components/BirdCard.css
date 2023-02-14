@@ -1,33 +1,36 @@
-  .birds__image{
-      width:50%;
-      height: 50%;
-  }
+.birds__image {
+  width: 70%;
+  height: 45%;
+}
 
-  .birds {
-    width: 28%;
-    text-align: center;
-    background-color: rgb(228,245,242);
-    box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
-    margin-bottom: 2%;
-    margin-top: 1%;
-  }
+.birds {
+  width: 28%;
+  text-align: center;
+  background-color: rgb(228, 245, 242);
+  box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
 
-  .birds__adopt{
-    margin-top: 5%;
-    width:50%;
-    font-size: larger;
-    letter-spacing: 1%;
-    margin-bottom: 20%;
-  }
+.birds__adopt {
+  margin-top: 15%;
+  width: 70%;
+  font-size: larger;
+  letter-spacing: 1%;
+  margin-bottom: 20%;
+  background-color: rgb(222, 218, 218);
+  border: 2px solid black;
+}
 
-  .birds__adopt:hover{
-    color: rgb(3, 56, 35);
-    cursor: pointer;
-    background-color: rgb(171, 242, 185);
-    box-shadow: 2px 2px 8px 4px grey;
-    transition: box-shadow 0.5s ease-in;
-  }
+.birds__adopt:hover {
+  color: rgb(3, 56, 35);
+  cursor: pointer;
+  background-color: rgb(171, 242, 185);
+  box-shadow: 2px 2px 8px 4px grey;
+  transition: box-shadow 0.5s ease-in;
+  border: 2px solid black;
+}
 
-  .birds h4{
-    margin-top: 3%;
-  }
+.birds h4 {
+  margin-top: 3%;
+}

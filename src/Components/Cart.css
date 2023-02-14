@@ -14,32 +14,88 @@
   color: rgb(46, 96, 54);
 }
 
-.Cart__discount, .Cart__total{
+.Cart__discount,
+.Cart__total {
   font-size: 30px;
 }
 
-/* .style__list__birds, .style__list__bonus{
-  width: 100%;
+.style__list__birds,
+.style__list__bonus {
   text-align: left;
-  font-size: 14px;
-  margin-left:15px;
-} */
+}
 
-.cart li, p {
+.style__list__bonus li,
+.style__list__bonus p {
   margin-bottom: 10px;
-  list-style-position: outside;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.style__list__bonus li {
+  margin-left: 70px;
+}
+
+.style__list__bonus p {
+  margin-left: 18px;
 }
 
 .delete__list {
   width: 30px;
-  height: 30px;
   font-size: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: 2%;
+  background-color: rgb(222, 218, 218);
+  border:2px solid black;
+}
+
+.delete__list:hover{
+  cursor: pointer;
+  background-color: rgb(171, 242, 185);
+  box-shadow: 2px 2px 8px 4px grey;
+  transition: box-shadow 0.5s ease-in;
+  color: rgb(3, 56, 35);
+  border:2px solid black;
 }
 
 .fas.fa-backspace {
   font-size: 30px;
+}
+
+.style__list__birds {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.style__list__birds th {
+  font-weight: bold;
+  padding: 8px;
+  font-size: 16px;
+  color: rgb(46, 96, 54);
+  text-align: center;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.style__list__birds th,
+.style__list__birds td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.style__list__birds td {
+  vertical-align: top;
+  text-align: left;
+  font-size: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }

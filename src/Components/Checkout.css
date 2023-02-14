@@ -1,30 +1,45 @@
-.Checkout{
-    width: 100%;
-    text-align: center;
-    box-shadow: 2px 2px 8px 4px rgb(71, 72, 71);
-    border:2px solid rgb(216,215,216)
+.Checkout {
+  width: 100%;
+  text-align: center;
+  box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
+  border: 2px solid rgb(216, 215, 216);
+  font-family: "Roboto Mono";
+  background-color: rgb(228, 245, 242);
+  margin-bottom: 20%;
 }
 
-.Checkout label{
-    font-size: larger;
+.Checkout label {
+  font-size: 20px;
 }
 
-.Checkout button{
-    font-size: large;
-    width: 45%;
-    margin-left: 5%;
-    margin-bottom: 10%;
-    text-align: center;
+.Checkout input {
+  width: 80%;
+  margin-bottom: 1%;
+  font-size: 18px;
+  margin-top: 3%;
 }
 
-.Checkout input{
-    width:80%;
-    margin-bottom: 1%;
+.Checkout__heading {
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: "Roboto Mono";
+  color: rgb(46, 96, 54);
 }
 
-.Checkout__heading{
-    margin-top:5%;
-    font-size: 46px;
-    font-family: 'Roboto Mono';
-    color: rgb(46,96,54);
+input[type="submit"].submit__birds {
+  width: 45%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+  background-color: rgb(222, 218, 218);
+  border: 2px solid black;
+}
+
+input[type="submit"].submit__birds:hover {
+  cursor: pointer;
+  background-color: rgb(171, 242, 185);
+  box-shadow: 2px 2px 8px 4px grey;
+  transition: box-shadow 0.5s ease-in;
+  color: rgb(3, 56, 35);
+  border: 2px solid black;
 }

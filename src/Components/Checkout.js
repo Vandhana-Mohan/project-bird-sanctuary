@@ -52,7 +52,7 @@ const Checkout = ({ handleReset }) => {
           <input type="number" id="zip-code" name="zip-code" />
         </label>
         <br />
-        <input type="submit" className="birds" value="Submit" />
+        <input type="submit" className="submit__birds" value="Submit" />
       </form>
     </aside>
   );

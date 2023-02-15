@@ -6,27 +6,33 @@
 #### [Click Here](https://bird-sanctuary-vandhana.netlify.app) - Visit my website to adopt birds.
 
 
+
 #### Home Page
+
 ![Home](./assets/Home.png)
 
 ---
 
 #### Header 
+
 ![Cart](./assets/Header.png)
 
 ---
 
 #### Cart 
+
 ![Cart](./assets/Cart.png)
 
 ---
 
 #### Checkout Form
+
 ![Checkout](./assets/Checkout.png)
 
 ---
 
 #### Footer
+
 ![Footer](./assets/Footer.png)
 
 ---

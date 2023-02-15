@@ -1,11 +1,10 @@
-[![Pursuit Logo](https://avatars1.githubusercontent.com/u/5825944?s=200&v=4)](https://pursuit.org)
-
 # Bird Sanctuary
 
-[Bird-Adoption-Platform](https://bird-sanctuary-vandhana.netlify.app) is an online platform hat enables users to adopt birds easily with its user-friendly interface, wide range of bird species.
+[Bird-Adoption-Platform](https://bird-sanctuary-vandhana.netlify.app) is a user-friendly online platform that allows users to easily adopt birds. With a wide selection of bird species available, users can simply select the ones they want to adopt and manage their adoption process through options such as adding or removing birds from their cart and reviewing their adopted bird list. The platform's intuitive interface ensures a hassle-free adoption experience, with a straightforward checkout process and confirmation of adoption upon completion. By adopting birds through this platform, users can support bird conservation efforts and provide a loving home to a feathered friend.
 
 
 #### [Click Here](https://bird-sanctuary-vandhana.netlify.app) - Visit my website to adopt birds.
+
 
 #### Home Page
 ![Home](./assets/Home.png)

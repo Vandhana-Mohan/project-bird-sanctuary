@@ -1,6 +1,5 @@
 import "./Cart.css";
 import bonusItems from "../data/bonusItems";
-import { v1 as generateUniqueID } from "uuid";
 
 const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
   const bonus = [...bonusItems];
@@ -33,11 +32,11 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
       <div className = "style__list__birds">
         <ol>
           {adoptedBirds.map((bird, index) => (
-            <li key={generateUniqueID()}>
+            <li>
               <span className="list-number">{index + 1}.</span>
               <span className="list-name">{bird.name}</span>
               <span className="list-price">${bird.amount}</span>
-              <button className = "delete__list"onClick={() => onDelete(bird.id)}>
+              <button className = "delete__list" onClick={() => onDelete(bird.id)}>
                 <span> <i className='fas fa-backspace'></i> </span>
               </button>
             </li>
@@ -49,7 +48,7 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
             <p> Your donations have qualified you for the following items:</p>
             <ul>
                 {bonuses.map((bonus) => (
-                <li key={generateUniqueID()}>{bonus}</li>
+                <li>{bonus}</li>
                 ))}
             </ul>
         </div>

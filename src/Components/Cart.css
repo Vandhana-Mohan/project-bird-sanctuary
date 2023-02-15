@@ -88,6 +88,7 @@
   border:2px solid black;
 }
 
-.fas.fa-backspace {
+.fas.fa-backspace { 
   font-size: 30px;
+  color: #ed0404;
 }

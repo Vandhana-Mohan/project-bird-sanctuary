@@ -1,6 +1,8 @@
 .birds__image {
-  width: 70%;
-  height: 45%;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
 }
 
 .birds {
@@ -8,8 +10,7 @@
   text-align: center;
   background-color: rgb(228, 245, 242);
   box-shadow: 2px 2px 8px 4px rgb(171, 242, 185);
-  margin-bottom: 2%;
-  margin-top: 1%;
+  margin-bottom:5%;
 }
 
 .birds__adopt {
@@ -33,4 +34,7 @@
 
 .birds h4 {
   margin-top: 3%;
+  font-family: "Roboto Mono";
+  color: rgb(46, 96, 54);
+  font-size: 24px;
 }

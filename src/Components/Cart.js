@@ -5,7 +5,6 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
   const bonus = [...bonusItems];
   let discountPercentage = discount ? 10 : 0;
   let discountedPrice = total - (total * discountPercentage) / 100;
-  //   bird-portfolio - checkout - without this comment cypress will fail
   const getBonuses = (total) => {
     switch (true) {
       case total >= 100 && total < 300:

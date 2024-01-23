@@ -20,7 +20,7 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
     }
   };
   const bonuses = getBonuses(total);
-  
+
   return (
     <aside className="Cart">
       <h1 className="Cart__heading">Cart</h1>
@@ -28,30 +28,36 @@ const Cart = ({ adoptedBirds, discount, total, onDelete }) => {
         <h3 className="Cart__discount">Discount: {discountPercentage}%</h3>
         <h4 className="Cart__total">Total: ${discountedPrice} </h4>
       </div>
-      <div className = "style__list__birds">
+      <div className="style__list__birds">
         <ol>
           {adoptedBirds.map((bird, index) => (
             <li>
               <span className="list-number">{index + 1}.</span>
-              <span className="list-name">{bird.name}</span>
-              <span className="list-price">${bird.amount}</span>
-              <button className = "delete__list" onClick={() => onDelete(bird.id)}>
-                <span> <i className='fas fa-backspace'></i> </span>
+              <span className="list-name">{bird.data.birdName}</span>
+              <span className="list-price">${bird.data.amount}</span>
+              <button
+                className="delete__list"
+                onClick={() => onDelete(bird.id)}
+              >
+                <span>
+                  {" "}
+                  <i className="fas fa-backspace"></i>{" "}
+                </span>
               </button>
             </li>
           ))}
         </ol>
       </div>
       {bonuses.length >= 1 ? (
-        <div className = "style__list__bonus">
-            <p> Your donations have qualified you for the following items:</p>
-            <ul>
-                {bonuses.map((bonus) => (
-                <li>{bonus}</li>
-                ))}
-            </ul>
+        <div className="style__list__bonus">
+          <p> Your donations have qualified you for the following items:</p>
+          <ul>
+            {bonuses.map((bonus) => (
+              <li>{bonus}</li>
+            ))}
+          </ul>
         </div>
-      ):null}
+      ) : null}
     </aside>
   );
 };

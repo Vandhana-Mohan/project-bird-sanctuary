@@ -1,39 +1,66 @@
 import React from "react";
 import birds from "./data/birds";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import BirdCard from "./Components/BirdCard";
 import Cart from "./Components/Cart";
 import Checkout from "./Components/Checkout";
 import Footer from "./Components/Footer";
-import { v1 as generateUniqueID } from "uuid";
+
 import "./App.css";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  query,
+  orderBy,
+  serverTimestamp,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
+import { db } from "./Components/Firebase/Firebase";
 
 function App() {
   const [adoptedBirds, setAdoptedBirds] = useState([]);
-  let total = 0
-  let discount = (adoptedBirds.length >= 3 ? 0.1 : 0 )
-  
-  for(let i = 0; i < adoptedBirds.length; i++){
-    total += adoptedBirds[i].amount
+  let total = 0;
+  let discount = adoptedBirds.length >= 3 ? 0.1 : 0;
+
+  useEffect(() => {
+    getFireBirds();
+  }, []);
+
+  for (let i = 0; i < adoptedBirds.length; i++) {
+    total += adoptedBirds[i].amount;
   }
 
   const handleAdopt = (bird) => {
-    setAdoptedBirds([...adoptedBirds, { ...bird, id: generateUniqueID() }]);
+    // Add a new document with a generated id.
+    const docRef = addDoc(collection(db, "cart"), {
+      birdName: bird.name,
+      amount: bird.amount,
+      timestamp: serverTimestamp(),
+    });
+    console.log("Document written with ID: ", docRef.id);
+    getFireBirds();
   };
 
-  const handleDelete = (id) => {
+  async function getFireBirds() {
+    let placeholder = [];
+    const querySnapshot = await getDocs(
+      query(collection(db, "cart"), orderBy("timestamp", "asc"))
+    );
+    querySnapshot.forEach((doc) => {
+      let data = doc.data();
+      placeholder.push({ data: data, id: doc.id });
+    });
+    setAdoptedBirds(placeholder);
+  }
+
+  async function handleDelete(id) {
     const newAdoptedBirds = adoptedBirds.filter((bird) => bird.id !== id);
     setAdoptedBirds(newAdoptedBirds);
-  };
-
-  // useEffect(() => {
-    // if (adoptedBirds.length >= 2) {
-    //   setDiscount(true);
-    // } else {
-    //   setDiscount(false);
-    // }
-  // }, [adoptedBirds.length]);
+    await deleteDoc(doc(db, "cart", id));
+  }
 
   const handleReset = () => {
     setAdoptedBirds([]);
@@ -44,7 +71,7 @@ function App() {
       <Header />
       <div className="card">
         <div className="cart-container">
-        <Cart
+          <Cart
             adoptedBirds={adoptedBirds}
             discount={discount}
             total={total}
